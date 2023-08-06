@@ -9,7 +9,7 @@ const scene = new  THREE.Scene()
 scene.add(model)
 
 // 创建一个三维坐标轴, rgb 分别对应 xyz 轴
-const axesHelper = new THREE.AxesHelper(5)
+const axesHelper = new THREE.AxesHelper(100)
 scene.add(axesHelper)
 
 
@@ -30,6 +30,7 @@ scene.add(dirLightHelper)
 // 添加一个环境光
 const ambient = new THREE.AmbientLight(0xffffff, 0.2)
 scene.add(ambient)
+
 
 
 // 定义相机输出画布的好吵是你(单位:px)
